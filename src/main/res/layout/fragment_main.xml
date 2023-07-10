@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainFragment">
+
+        <Button
+            android:id="@+id/btnParking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="Smart Parking"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Smart Temperature Controller"
+            app:layout_constraintEnd_toEndOf="@+id/btnParking"
+            app:layout_constraintStart_toStartOf="@+id/btnParking"
+            app:layout_constraintTop_toBottomOf="@+id/btnParking" />
+
+        <Button
+            android:id="@+id/btnLight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Smart Light Controller and Face Recognition"
+            app:layout_constraintEnd_toEndOf="@+id/btnTemp"
+            app:layout_constraintStart_toStartOf="@+id/btnTemp"
+            app:layout_constraintTop_toBottomOf="@+id/btnTemp" />
+
+        <Button
+            android:id="@+id/btnAlarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Smart Alarm Detector and Smart Reporting System"
+            app:layout_constraintEnd_toEndOf="@+id/btnLight"
+            app:layout_constraintStart_toStartOf="@+id/btnLight"
+            app:layout_constraintTop_toBottomOf="@+id/btnLight" />
+
+        <!--<Button
+            android:id="@+id/btnRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Register / Login"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />-->
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/parkingFragment"
+        android:name="com.example.smartparking.smartParking.parkingFragment"
+        android:label="fragment_parking"
+        tools:layout="@layout/fragment_parking" />
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.smartparking.MainFragment"
+        android:label="MainFragment">
+        <action
+            android:id="@+id/action_mainFragment_to_parkingFragment"
+            app:destination="@id/parkingFragment"
+            app:popUpTo="@id/mainFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_temperatureFragment"
+            app:destination="@id/temperatureFragment"
+            app:popUpTo="@id/mainFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_lightFragment"
+            app:destination="@id/lightFragment"
+            app:popUpTo="@id/mainFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_alarmFragment"
+            app:destination="@id/alarmFragment"
+            app:popUpTo="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/temperatureFragment"
+        android:name="com.example.smartparking.temperature.temperatureFragment"
+        android:label="fragment_temperature"
+        tools:layout="@layout/fragment_temperature" />
+    <fragment
+        android:id="@+id/lightFragment"
+        android:name="com.example.smartparking.smartLight.lightFragment"
+        android:label="fragment_light"
+        tools:layout="@layout/fragment_light" />
+    <fragment
+        android:id="@+id/alarmFragment"
+        android:name="com.example.smartparking.smartAlarm.alarmFragment"
+        android:label="fragment_alarm"
+        tools:layout="@layout/fragment_alarm" />
+</navigation>

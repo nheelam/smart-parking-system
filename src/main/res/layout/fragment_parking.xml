@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/colorPark1"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="#E53935"
+            android:text=" "
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.164"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.103" />
+
+        <TextView
+            android:id="@+id/colorPark2"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="32dp"
+            android:background="#E53935"
+            android:text=" "
+            app:layout_constraintBottom_toBottomOf="@+id/colorPark1"
+            app:layout_constraintStart_toEndOf="@+id/colorPark1"
+            app:layout_constraintTop_toTopOf="@+id/colorPark1"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/car_icon"
+            app:layout_constraintBottom_toBottomOf="@+id/colorPark1"
+            app:layout_constraintEnd_toEndOf="@+id/colorPark1"
+            app:layout_constraintStart_toStartOf="@+id/colorPark1"
+            app:layout_constraintTop_toTopOf="@+id/colorPark1" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/car_icon"
+            app:layout_constraintBottom_toBottomOf="@+id/colorPark2"
+            app:layout_constraintEnd_toEndOf="@+id/colorPark2"
+            app:layout_constraintStart_toStartOf="@+id/colorPark2"
+            app:layout_constraintTop_toTopOf="@+id/colorPark2" />
+
+        <TextView
+            android:id="@+id/tvParkSlot1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1A"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/colorPark1"
+            app:layout_constraintEnd_toEndOf="@+id/colorPark1"
+            app:layout_constraintStart_toStartOf="@+id/colorPark1" />
+
+        <TextView
+            android:id="@+id/tvParkSlot2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1B"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/colorPark2"
+            app:layout_constraintEnd_toEndOf="@+id/colorPark2"
+            app:layout_constraintStart_toStartOf="@+id/colorPark2" />
+
+        <TextView
+            android:id="@+id/tvPark1Status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="@+id/colorPark1"
+            app:layout_constraintHorizontal_bias="0.456"
+            app:layout_constraintStart_toStartOf="@+id/colorPark1"
+            app:layout_constraintTop_toBottomOf="@+id/colorPark1" />
+
+        <TextView
+            android:id="@+id/tvPark2Status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="@+id/colorPark2"
+            app:layout_constraintHorizontal_bias="0.543"
+            app:layout_constraintStart_toStartOf="@+id/colorPark2"
+            app:layout_constraintTop_toBottomOf="@+id/colorPark2" />
+
+        <TextView
+            android:id="@+id/tvParkStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="@+id/tvPark2Status"
+            app:layout_constraintHorizontal_bias="0.478"
+            app:layout_constraintStart_toStartOf="@+id/tvPark1Status"
+            app:layout_constraintTop_toBottomOf="@+id/tvPark1Status" />
+
+        <com.jjoe64.graphview.GraphView
+            android:id="@+id/graph2"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvParkStatus"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".smartAlarm.alarmFragment">
+
+        <TextView
+            android:id="@+id/alarmBackground"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="#7CB342"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.141"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.055" />
+
+        <ImageView
+            android:id="@+id/alarmIcon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/alarm_icon"
+            app:layout_constraintBottom_toBottomOf="@+id/alarmBackground"
+            app:layout_constraintEnd_toEndOf="@+id/alarmBackground"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="@+id/alarmBackground"
+            app:layout_constraintTop_toTopOf="@+id/alarmBackground"
+            app:layout_constraintVertical_bias="0.498" />
+
+        <Button
+            android:id="@+id/btnUpload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Upload"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toEndOf="@+id/alarmBackground"
+            app:layout_constraintTop_toBottomOf="@+id/imgPlateNumber" />
+
+        <TextView
+            android:id="@+id/alarmNote"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="128dp"
+            android:text=" "
+            app:layout_constraintEnd_toEndOf="@+id/alarmBackground"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/alarmBackground"
+            app:layout_constraintTop_toBottomOf="@+id/alarmBackground" />
+
+        <ImageView
+            android:id="@+id/imgPlateNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            app:layout_constraintBottom_toBottomOf="@+id/alarmBackground"
+            app:layout_constraintStart_toEndOf="@+id/alarmBackground"
+            app:layout_constraintTop_toTopOf="@+id/alarmBackground"
+            app:layout_constraintVertical_bias="0.59"
+            tools:srcCompat="@tools:sample/avatars" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
